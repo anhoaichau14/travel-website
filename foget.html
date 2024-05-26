@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_login.css" />
+    <title>Travel-Tour by Hoài An</title>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="form-container sign-up">
+        <form id="signupForm">
+          <h1>Tạo Tài Khoản</h1>
+          <input type="text" id="signupName" placeholder="Name" required />
+          <input type="email" id="signupEmail" placeholder="Email" required />
+          <input
+            type="password"
+            id="signupPassword"
+            placeholder="Password"
+            required
+          />
+        </form>
+      </div>
+      <div class="form-container sign-in">
+        <form id="loginForm">
+          <h1>Quên Mật Khẩu</h1>
+          <input type="email" id="loginEmail" placeholder="Email" required />
+
+          <button type="submit">Gửi Mail Xác Nhận</button>
+          <a href="login.html">Quay lại</a>
+        </form>
+      </div>
+      <div class="toggle-container">
+        <div class="toggle">
+          <div class="toggle-panel toggle-right">
+            <h1>Xin Chào!</h1>
+            <p>Vui lòng xác nhận email để được khôi phục mật khẩu.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="foget.js"></script>
+  </body>
+</html>

@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel-Tour by Hoài An</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="overlay" data-overlay></div>
+
+      <div class="header-top">
+        <div class="container">
+          <a href="tel:+01123456790" class="helpline-box">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <div class="wrapper">
+              <p class="helpline-title">Gọi Để Được Tư Vấn</p>
+
+              <p class="helpline-number">+84 325 039 141</p>
+            </div>
+          </a>
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" alt="Tourly logo" />
+          </a>
+
+          <div class="header-btn-group">
+            <button class="search-btn" aria-label="Search">
+              <ion-icon name="search"></ion-icon>
+            </button>
+
+            <button
+              class="nav-open-btn"
+              aria-label="Open Menu"
+              data-nav-open-btn
+            >
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-bottom">
+        <div class="container">
+          <ul class="social-list">
+            <li>
+              <a
+                href="https://www.facebook.com/Chauhoaian4325"
+                class="social-link"
+              >
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://x.com/ChauAnnn" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+          </ul>
+
+          <nav class="navbar" data-navbar>
+            <div class="navbar-top">
+              <a href="#" class="logo">
+                <img src="./assets/images/logo-blue.svg" alt="Tourly logo" />
+              </a>
+
+              <button
+                class="nav-close-btn"
+                aria-label="Close Menu"
+                data-nav-close-btn
+              >
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="navbar-list">
+              <li>
+                <a href="#home" class="navbar-link" data-nav-link>Trang chủ</a>
+              </li>
+
+              <li>
+                <a href="#" class="navbar-link" data-nav-link>liên hệ</a>
+              </li>
+
+              <li>
+                <a href="#destination" class="navbar-link" data-nav-link
+                  >điểm đến</a
+                >
+              </li>
+
+              <li>
+                <a href="#package" class="navbar-link" data-nav-link>gói</a>
+              </li>
+
+              <li>
+                <a href="#gallery" class="navbar-link" data-nav-link
+                  >phòng trưng bày</a
+                >
+              </li>
+
+              <li>
+                <a href="#contact" class="navbar-link" data-nav-link>liên hệ</a>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="btn btn-primary" href="tel:+84 325 039 141">
+            Đặt Ngay
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="hero" id="home">
+          <div class="container">
+            <h2 class="h1 hero-title">HÀNH TRÌNH KHÁM PHÁ VIỆT NAM</h2>
+
+            <p class="hero-text">
+              "Bạn đã sẵn sàng khám phá những chân trời mới và tạo nên những kỷ
+              niệm khó quên? Hãy xách ba lô lên và cùng chúng tôi trải nghiệm
+              những chuyến phiêu lưu tuyệt vời! Đừng bỏ lỡ cơ hội du lịch đầy
+              thú vị và kỳ diệu này!"
+            </p>
+
+            <div class="btn-group">
+              <button class="btn btn-primary">Xem Thêm</button>
+
+              <button class="btn btn-secondary">Đặt Ngay</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #TOUR SEARCH
+      -->
+
+        <section class="tour-search">
+          <div class="container">
+            <form action="" class="tour-search-form">
+              <div class="input-wrapper">
+                <label for="destination" class="input-label"
+                  >Tìm Kiếm Địa Điểm</label
+                >
+
+                <input
+                  type="text"
+                  name="destination"
+                  id="destination"
+                  required
+                  placeholder="Enter Destination"
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="people" class="input-label">Số Lượng</label>
+
+                <input
+                  type="number"
+                  name="people"
+                  id="people"
+                  required
+                  placeholder="No.of People"
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="checkin" class="input-label">Ngày Đến</label>
+
+                <input
+                  type="date"
+                  name="checkin"
+                  id="checkin"
+                  required
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="checkout" class="input-label">Ngày Về</label>
+
+                <input
+                  type="date"
+                  name="checkout"
+                  id="checkout"
+                  required
+                  class="input-field"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-secondary">TƯ VẤN</button>
+            </form>
+          </div>
+        </section>
+
+        <!-- 
+        - #POPULAR
+      -->
+
+        <section class="popular" id="destination">
+          <div class="container">
+            <p class="section-subtitle">Khám Phá Thêm Nhiều Địa Điểm</p>
+
+            <h2 class="h2 section-title">Điểm Đến Phổ Biến</h2>
+
+            <p class="section-text">
+              "Khám phá những điểm đến phổ biến nhất Việt Nam với chúng tôi, từ
+              vẻ đẹp cổ kính của phố cổ Hà Nội, những bãi biển cát trắng ở Đà
+              Nẵng và Nha Trang, đến kỳ quan thiên nhiên hùng vĩ của Vịnh Hạ
+              Long và đồi chè xanh ngát ở Đà Lạt, mỗi điểm đến hứa hẹn mang đến
+              cho bạn những trải nghiệm tuyệt vời và khó quên."
+            </p>
+
+            <ul class="popular-list">
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img
+                      src="./assets/images/popular-1.jpg"
+                      alt="San miguel, italy"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="card-subtitle">
+                      <a href="#">HaNoi</a>
+                    </p>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Phố Cổ Hà Nội</a>
+                    </h3>
+
+                    <p class="card-text">Mô tả</p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img
+                      src="./assets/images/popular-2.jpg"
+                      alt="Burj khalifa, dubai"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="card-subtitle">
+                      <a href="#">DaNang</a>
+                    </p>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Cầu Rồng</a>
+                    </h3>
+
+                    <p class="card-text">Mô tả</p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img
+                      src="./assets/images/popular-3.jpg"
+                      alt="Kyoto temple, japan"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <p class="card-subtitle">
+                      <a href="#">Đà Lạt</a>
+                    </p>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Vườn Hoa Đà Lạt</a>
+                    </h3>
+
+                    <p class="card-text">Mô tả</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <button class="btn btn-primary">Thêm Điểm Đến</button>
+          </div>
+        </section>
+
+        <!-- 
+        - #PACKAGE
+      -->
+
+        <section class="package" id="package">
+          <div class="container">
+            <p class="section-subtitle">Gói Phổ Biến</p>
+
+            <h2 class="h2 section-title">Kiểm Tra Các Gói</h2>
+
+            <p class="section-text">
+              "Khám phá các gói dịch vụ du lịch đa dạng và hấp dẫn của chúng
+              tôi, được thiết kế để mang đến cho bạn những trải nghiệm tuyệt vời
+              và khó quên tại những điểm đến đẹp nhất trên thế giới."
+            </p>
+
+            <ul class="package-list">
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/packege-1.jpg"
+                      alt="Experience The Great Holiday On Beach"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Tên Địa Điểm</h3>
+
+                    <p class="card-text">Mô tả địa điểm</p>
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+
+                          <p class="text">7D/6N</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
+
+                          <p class="text">người: 10</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+
+                          <p class="text">VietNam</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(25 reviews)</p>
+
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </div>
+
+                    <p class="price">
+                      $750
+                      <span>/ người</span>
+                    </p>
+
+                    <button class="btn btn-secondary">Đặt Ngay</button>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/packege-2.jpg"
+                      alt="Summer Holiday To The Oxolotan River"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Tên Địa Điểm</h3>
+
+                    <p class="card-text">Mô tả địa điểm</p>
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+
+                          <p class="text">7D/6N</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
+
+                          <p class="text">người: 10</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+
+                          <p class="text">VietNam</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(20 reviews)</p>
+
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </div>
+
+                    <p class="price">
+                      $520
+                      <span>/ người</span>
+                    </p>
+
+                    <button class="btn btn-secondary">Đặt Ngay</button>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/packege-3.jpg"
+                      alt="Santorini Island's Weekend Vacation"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Tên Địa Điểm</h3>
+
+                    <p class="card-text">Mô tả địa điểm du lịch</p>
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+
+                          <p class="text">7D/6N</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
+
+                          <p class="text">người: 10</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+
+                          <p class="text">VietNam</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(40 reviews)</p>
+
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </div>
+
+                    <p class="price">
+                      $660
+                      <span>/ người</span>
+                    </p>
+
+                    <button class="btn btn-secondary">Đặt Ngay</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <button class="btn btn-primary">Xem Tất Cả Các Gói</button>
+          </div>
+        </section>
+
+        <!-- 
+        - #GALLERY
+      -->
+
+        <section class="gallery" id="gallery">
+          <div class="container">
+            <p class="section-subtitle">Thư Viện Ảnh</p>
+
+            <h2 class="h2 section-title">Ảnh từ khách du lịch</h2>
+
+            <p class="section-text">
+              "Chào mừng bạn đến với bộ sưu tập hình ảnh đáng nhớ từ những
+              chuyến phiêu lưu của khách du lịch, nơi chúng tôi lưu giữ những
+              khoảnh khắc tuyệt vời và trải nghiệm khó quên từ khắp nơi trên thế
+              giới."
+            </p>
+
+            <ul class="gallery-list">
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img
+                    src="./assets/images/gallery-1.jpg"
+                    alt="Gallery image"
+                  />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img
+                    src="./assets/images/gallery-2.jpg"
+                    alt="Gallery image"
+                  />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img
+                    src="./assets/images/gallery-3.jpg"
+                    alt="Gallery image"
+                  />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img
+                    src="./assets/images/gallery-4.jpg"
+                    alt="Gallery image"
+                  />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img
+                    src="./assets/images/gallery-5.jpg"
+                    alt="Gallery image"
+                  />
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #CTA
+      -->
+
+        <section class="cta" id="contact">
+          <div class="container">
+            <div class="cta-content">
+              <p class="section-subtitle">Hành Động Ngay</p>
+
+              <h2 class="h2 section-title">
+                SẴN SÀNG CHO CHUYẾN DU LỊCH KHÔNG THỂ QUÊN.
+              </h2>
+
+              <p class="section-text">
+                Đội ngũ hỗ trợ chuyên nghiệp của chúng tôi luôn sẵn sàng giải
+                đáp mọi thắc mắc và hỗ trợ bạn trong suốt quá trình từ khi đặt
+                chỗ đến khi kết thúc chuyến đi.
+              </p>
+            </div>
+
+            <button class="btn btn-secondary">Liên Hệ</button>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <img src="./assets/images/logo.svg" alt="Tourly logo" />
+            </a>
+
+            <p class="footer-text">
+              Đội ngũ hỗ trợ chuyên nghiệp của chúng tôi luôn sẵn sàng giải đáp
+              mọi thắc mắc và hỗ trợ bạn trong suốt quá trình từ khi đặt chỗ đến
+              khi kết thúc chuyến đi.
+            </p>
+          </div>
+
+          <div class="footer-contact">
+            <h4 class="contact-title">Liên Hệ</h4>
+
+            <p class="contact-text">Liên Hệ Và Tìm Đến Chúng Tôi !!</p>
+
+            <ul>
+              <li class="contact-item">
+                <ion-icon name="call-outline"></ion-icon>
+
+                <a href="tel:+01123456790" class="contact-link"
+                  >+84 325 039 141</a
+                >
+              </li>
+
+              <li class="contact-item">
+                <ion-icon name="mail-outline"></ion-icon>
+
+                <a href="mailto:info.tourly.com" class="contact-link"
+                  >anhoaichau14@gmail.com</a
+                >
+              </li>
+
+              <li class="contact-item">
+                <ion-icon name="location-outline"></ion-icon>
+
+                <address>TP. Ho Chi Minh, Viet Nam</address>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-form">
+            <p class="form-text">
+              Đăng ký bản tin của chúng tôi để nhận thêm thông tin và tin tức
+              mới !!
+            </p>
+
+            <form action="" class="form-wrapper">
+              <input
+                type="email"
+                name="email"
+                class="input-field"
+                placeholder="Enter Your Email"
+                required
+              />
+
+              <button type="submit" class="btn btn-secondary">Đăng Kí</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">code by HOAIAN <a href="">NO COPPY RIGHT!</a></p>
+
+          <ul class="footer-bottom-list">
+            <li>
+              <a href="#" class="footer-bottom-link">Chính Sách Bảo Mật</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-bottom-link">Điều Khoản & Điều Kiện</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-bottom-link">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #GO TO TOP
+  -->
+
+    <a href="#top" class="go-top" data-go-top>
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
